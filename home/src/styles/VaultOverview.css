@@ -1,0 +1,94 @@
+.overview-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 18px 32px -24px rgba(15, 23, 42, 0.35);
+}
+
+.overview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.overview-text h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.overview-text p {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.85rem;
+  background: #f8fafc;
+}
+
+.overview-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.overview-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.overview-value.active {
+  color: #047857;
+}
+
+.overview-value.inactive {
+  color: #9ca3af;
+}
+
+.overview-value.monospace {
+  font-family: 'Source Code Pro', 'Fira Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.overview-placeholder {
+  border-radius: 0.85rem;
+  border: 1px solid #cbd5f5;
+  padding: 1.25rem;
+  background: #eef2ff;
+  color: #3730a3;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  .overview-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .overview-card {
+    padding: 1.25rem;
+  }
+}
